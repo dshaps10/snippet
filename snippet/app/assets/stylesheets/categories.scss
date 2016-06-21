@@ -4,27 +4,40 @@
 // Font Variables
 $roboto: 'Roboto';
 
+* {
+  background-color: #00e6ac;
+}
+
 header {
   width: 100%;
-  border: 2px solid black;
   text-align: center;
   font-family: $roboto;
-  h1 {
-    font-size: 3em;
-  };
-  h2 {
-    font-size: 1.5em;
-  };
+  color: white;
 }
 
 .category-container {
   width: 100%;
-  border: 2px solid black;
   .row {
     text-align: center;
     .thumbnail {
       display: inline-block;
       padding: 5%;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
   }
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.5em;
 }
