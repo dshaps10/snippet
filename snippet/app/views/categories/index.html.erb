@@ -5,9 +5,9 @@
   <h2>An online marketplace for code snippet sharing</h2>
 </header>
 
-<div class="category-container">
+<div class="container">
   <% @categories.each do |category| %>
-    <div class="category-thumbnail">
+    <div class="thumbnail">
       <h3><%= link_to category.name, category %></h3>
     </div>
   <% end %>

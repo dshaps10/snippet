@@ -1,3 +1,28 @@
-// Place all the styles related to the Categories controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Import Google Fonts
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+// Font Variables
+$roboto: 'Roboto';
+
+header {
+  width: 75%;
+  margin: auto;
+  border: 2px solid black;
+  text-align: center;
+  font-family: $roboto;
+  h1 {
+    font-size: 3em;
+  };
+  h2 {
+    font-size: 2em;
+  };
+}
+
+.container {
+  padding-top: 5%;
+  width: 75%;
+  margin: auto;
+  border: 2px solid black;
+  .thumbnail {
+  }
+}
