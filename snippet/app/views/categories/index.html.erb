@@ -5,10 +5,24 @@
   <h2>An online marketplace for code snippet sharing</h2>
 </header>
 
-<div class="container">
+<div class="category-container">
+  <div id="row-1" class="row">
+    <div class="thumbnail">
+      <h3><%= link_to @categories[0].name, '/categories/1' %></h3>
+    </div>
+    <div class="thumbnail">
+      <h3><%= link_to @categories[1].name, '/categories/2' %></h3>
+    </div>
+    <div class="thumbnail">
+      <h3><%= link_to @categories[2].name, '/categories/3' %></h3>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
   <% @categories.each do |category| %>
     <div class="thumbnail">
       <h3><%= link_to category.name, category %></h3>
     </div>
   <% end %>
-</div>
+</div> -->
