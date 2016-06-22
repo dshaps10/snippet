@@ -1,12 +1,18 @@
 // Import Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 
+@keyframes fadein {
+  from { opacity: 0 ;}
+  to { opacity: 1; }
+}
+
 // Font Variables
 $roboto-slab: 'Roboto Slab', serif;
 
 html {
   background-color: #00e6ac;
   color: white;
+  animation: fadein 1s;
 }
 
 header {
@@ -25,7 +31,7 @@ table {
       .icon-wrapper {
         padding: 10%;
         border-radius: 10px;
-        transition: background-color 1s;
+        transition: background-color 0.50s;
         &:hover {
           background-color: #00b386;
         }
