@@ -9,11 +9,13 @@
   <h1><%= @category.name %></h1>
 </header>
 
-<div class="post-container">
-  <% @posts.each do |post| %>
-  <div class="posting">
-    <h3><%= post.title %></h3>
-    <p><%= post.description %></p>
-  </div>
-  <% end %>
-</div>
+	<div class="<post></post>-container">
+	  <% @posts.each do |post| %>
+		<a href="<%= "/posts/#{post.id}" %>">
+	  <div class="posting">
+	    <h3><%= post.title %></h3>
+	    <p><%= post.description %></p>
+	  </div>
+	  <% end %>
+	</div>
+</a>
