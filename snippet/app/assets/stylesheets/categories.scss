@@ -2,8 +2,16 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
 
 @keyframes fadein {
-  from { opacity: 0 ;}
-  to { opacity: 1; }
+  0% { opacity: 0; }
+  25% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes move {
+  0% { top: 300px; }
+  25% { top: 300px; }
+  100% { top: 0px; }
 }
 
 // Font Variables
@@ -12,16 +20,20 @@ $roboto-slab: 'Roboto Slab', serif;
 html {
   background-color: #4db8ff;
   color: white;
-  animation: fadein 2s;
+  // animation: fadein 2s;
 }
 
 header {
+  position: relative;
+  animation: move 3s;
   width: 100%;
   text-align: center;
   font-family: $roboto-slab;
 }
 
 table {
+  position: relative;
+  animation: fadein 3s;
   width: 100%;
   text-align: center;
   tr {
