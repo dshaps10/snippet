@@ -1,4 +1,4 @@
-== README
+#README
 
 #About Snippet
 Snippet is an online marketplace where programmers can place post reusable snippets of code that can be plugged into other programmers' projects.
@@ -20,5 +20,5 @@ You will be brought to the landing page where all snippet categories will be pre
 ##Uploading a New Snippet
 You can create a new snippet from within the category view; this automatically assigns your snippet to that category.  This is done through a simple modal form which will upload your snippet dynamically.
 
-##A Note on Updating a Deleting
+##A Note on Updating & Deleting
 As of now, there is no user authentication so updating an deleting is not yet a feature.  This can only be handled on the admin side.  In the future, I'm looking to add this functionality.
