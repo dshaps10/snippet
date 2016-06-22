@@ -1,7 +1,7 @@
 #README
 
 ##Link to Heroku-deployed application
-[Deployed Site](http://go-snippet.herokuapp.com/)
+[go-snippet.herokuapp.com](http://go-snippet.herokuapp.com/)
 
 #About Snippet
 Snippet is an online marketplace where programmers can place post reusable snippets of code that can be plugged into other programmers' projects.
