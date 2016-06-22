@@ -1,9 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
+<header class="category-title">
+  <h1><%= @category.name %></h1>
+</header>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
+<div class="post-container">
+  <% @posts.each do |post| %>
+  <div class="posting">
+    <h3><%= post.title %></h3>
+    <p><%= post.description %></p>
+  </div>
+  <% end %>
+</div>
+
+
 <%= link_to 'Back', categories_path %>
