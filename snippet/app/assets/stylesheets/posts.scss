@@ -26,13 +26,34 @@ $roboto-slab: 'Roboto Slab', serif;
 .posting {
   text-align: center;
   margin: auto;
+  margin-top: 2%;
   width: 50%;
   padding: 2%;
   font-family: $roboto-slab;
   border-radius: 10px;
   transition: background-color 0.50s;
+  background-color: #1aa3ff;
+  border: 2px solid #1aa3ff;
   &:hover {
+    background-color: #4db8ff;
+    border: 2px solid #1aa3ff;
+  }
+}
+
+.nav {
+  width: 20%;
+  h3 {
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    padding: 2%;
     background-color: #1aa3ff;
+    border: 2px solid #4db8ff;
+    transition: background-color 0.50s, border 0.50s;
+    &:hover {
+      background-color: #4db8ff;
+      border: 2px solid #1aa3ff;
+    }
   }
 }
 
