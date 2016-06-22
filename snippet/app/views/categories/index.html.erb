@@ -5,30 +5,54 @@
   <h2>An online marketplace for code snippet sharing</h2>
 </header>
 
-<div class="category-container">
-  <div id="row-1" class="row">
-    <div class="thumbnail">
-      <h3><%= link_to @categories[0].name, '/categories/1' %></h3>
-    </div>
-    <div class="thumbnail">
-      <h3><%= link_to @categories[1].name, '/categories/2' %></h3>
-    </div>
-    <div class="thumbnail">
-      <h3><%= link_to @categories[2].name, '/categories/3' %></h3>
-    </div>
-  </div>
-  <div id="row-2" class="row">
-    <div class="thumbnail">
-      <h3><%= link_to @categories[3].name, '/categories/4' %></h3>
-    </div>
-    <div class="thumbnail">
-      <h3><%= link_to @categories[4].name, '/categories/5' %></h3>
-    </div>
-    <div class="thumbnail">
-      <h3><%= link_to @categories[5].name, '/categories/6' %></h3>
-    </div>
-  </div>
-</div>
+<table>
+  <tr>
+    <td>
+      <div class="icon-wrapper">
+        <h3>
+          <%= link_to @categories[0].name, '/categories/1' %>
+        </h3>
+      </div>
+    </td>
+    <td>
+      <div class="icon-wrapper">
+        <h3>
+          <%= link_to @categories[1].name, '/categories/2' %>
+        </h3>
+      </div>
+    </td>
+    <td>
+      <div class="icon-wrapper">
+        <h3>
+          <%= link_to @categories[2].name, '/categories/3' %>
+        </h3>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="icon-wrapper">
+        <h3>
+          <%= link_to @categories[3].name, '/categories/4' %>
+        </h3>
+      </div>
+    </td>
+    <td>
+      <div class="icon-wrapper">
+        <h3>
+          <%= link_to @categories[4].name, '/categories/5' %>
+        </h3>
+      </div>
+    </td>
+    <td>
+      <div class="icon-wrapper">
+        <h3>
+          <%= link_to @categories[5].name, '/categories/6' %>
+        </h3>
+      </div>
+    </td>
+  </tr>
+</table>
 
 <!-- <div class="container">
   <% @categories.each do |category| %>
