@@ -31,12 +31,14 @@ $roboto-slab: 'Roboto Slab', serif;
   padding: 2%;
   font-family: $roboto-slab;
   border-radius: 10px;
-  transition: background-color 0.50s;
+  transition: background-color 0.50s, border 0.50s, box-shadow 0.50s;
   background-color: #1aa3ff;
   border: 2px solid #1aa3ff;
+  box-shadow: 5px 5px 5px #888888;
   &:hover {
     background-color: #4db8ff;
     border: 2px solid #1aa3ff;
+    box-shadow: 0px 0px 0px;
   }
 }
 
