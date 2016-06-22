@@ -4,7 +4,7 @@
 // Font Variables
 $roboto-slab: 'Roboto Slab', serif;
 
-* {
+html {
   background-color: #00e6ac;
   color: white;
 }
@@ -24,8 +24,11 @@ table {
       padding: 5%;
       .icon-wrapper {
         padding: 10%;
-        border: 2px solid black;
         border-radius: 10px;
+        transition: background-color 1s;
+        &:hover {
+          background-color: #00b386;
+        }
       }
     }
   }
@@ -44,6 +47,7 @@ h3 {
 }
 
 a {
+  color: white;
   text-decoration: none;
   font-family: $roboto-slab;
   &:hover {
