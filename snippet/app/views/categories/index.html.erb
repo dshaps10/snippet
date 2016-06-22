@@ -8,48 +8,66 @@
 <table>
   <tr>
     <td>
-      <div class="icon-wrapper">
-        <h3>
-          <%= link_to @categories[0].name, '/categories/1' %>
-        </h3>
-      </div>
+      <a href="/categories/1">
+        <div class="icon-wrapper">
+          <img class="icon icons8-JS" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAABq0lEQVRoQ+2a/zFEMRDHv1cBOtCB0wEV0AEqOCpABXRACXRABU4HVIAKmI9JbjLPI5IneT9sZu6fu7xkP/vdvbzdyUwTGbOJcGiyIIeSLiStD1ypV0knkq69nU1FXkYA4W0HZuM7kHf3w9BD7oudTYMNpHJOmSKVHR7dzhSJuqjyBFOkssOj25kiURdVnmCKVHZ4dDtTJOqilgmnkp6DmoEaZ0/SpqR7SXc5i7pnqirCZhi844x/CGqdR0nzMYLcODW2JT05sOUYQTAahQD5i9FbaHlFjsI6uwNRbyDkA8m9JunSNQ46cHyqy1hVuCVL3TDZ2ZSkRxlgziWddSDpFQS7vTIYsuqAZAD1DoLNhNbCJX7uP1c1EA4/emRtIURT7SCM76EqcuXOCXJi1yU5UCQ7pzrhdStpPwPAP1JcEQwlXPiQ2IQR6gCx5V5Z+J5Ep1OYO4qD5BqW+pyBpHqs9HxTpLSHU9c3RVI9Vnq+KVLaw6nrmyKpHis93xQp7eHU9f+PIrxaU1OPYbyFlxuazQeucFBDDB0GiOOfrnCMQYlWG4d+VePXjp0MyAeOio4zLBrV0wAAAABJRU5ErkJggg==" width="50" height="50">
+          <h3>
+            <%= @categories[0].name %>
+          </h3>
+        </div>
+      </a>
     </td>
     <td>
-      <div class="icon-wrapper">
-        <h3>
-          <%= link_to @categories[1].name, '/categories/2' %>
-        </h3>
-      </div>
+      <a href="/categories/2">
+        <div class="icon-wrapper">
+          <img class="icon icons8-Sigma" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAD5UlEQVRoQ82agZFOMRSFz1aAClABKkAFqAAVoAJUgArYClABKkAFqAAVMJ/J5ez7k7y8JM/8mdmxm5fc3JPknNybONG/8lrSbfv72H59I+lOyakT+0DDW8fm/cIf9/fMJ/9wXtInSRclvZJ0/4hA/Uq+NAGh7VVJ7yWdk/RI0vMjAbMZCH7DE/hCuZmA1fAA/p0kVnSk/EhjscVPF4a6gGDjoaRnkjAOGLZcqbAN744gyPRlPIj9NX3rBkL/cBCjgAFUrrAiH9MHBmdGe8olSTckPUk89XGHgLBV4MuV9C9gSsVX8JrNZA8gH/dpAjYEBCcwyvJC/hdpy5WcC/lmJgEzUoKnjH1Z0jAQnHElQ5LZcrniMzlDvgHBUcCkxNZtlt/SLN6T9DJ9xHCJ/K2gW1YL6X8gie31OHUYBoKdMAzpazwI0C2KVwME8ZF1VgYhoEwBgiHnQU3JWhWvBsT5SbuftbOqiHCQB7P4wkqwwhQUlJ9s2QpkSf6Qx5zxmXxZ5VQPEIzG/uX32iHo4U5NJFYdXWvQCwS7rWFMiASkBUwpQljztfp9BAiGg9RrTiLXRAjV5GgEySgQxg4nIWIpjIG0tNstPZgBxGWydqI7r6bzZQaQpZLVwhgiW05peEIMNY0vs4AApjWMYQteb4ioN1FmJhAG9hkvhTFsxe/Jy2np9GwgLWGMr1xLKt20MnsA8fBkmcN4NlnjUpPz3mgvIOQPSC6XCBEr8Tf1APX6zU7nOuwBBGeZ+c8plEGZcJ6QnPoPqX4KgDAyGwjJFytAyM0KhLxGvYM7WiChWIDg8IssslR/lEBciZzEXj9yVbQKesbW8ptGPxdK9atO9TQYBQKJv2SUiPqccvX42NRnBIgrESRmBaK4cnl9k1M9jUaAxMPQUolKytXjn/dh4rgeQkiI10iz/5ZeIJH1LRUqyL2snwEizqHs0dEDpBQreb4xNfywYJQJIjk7OFS3Aik56+FH7WalZ2WWgsITxsE99BYgLqduyEn/docH1ThQWQXuBgBysOKtQGrOlkjfM/vLPh4tk98gJNQdhP+tQCAa22qpUE56BogXplkg4kkvdkDxeaEFiMupO9ua2m4BBdd4SsB2hP8R8sfqLM+sP/bXgJScdXJvcXRLWxSKWxkuAinhSzaXqQGpyanfU21xbq0tsx2vu2xbv2Xx9xIE4EwpAXGFmi2na2BK3+P2JZvn54D894CvEVkQ/ULuPiwHJJeqNo61WzO2MlH2N3u9qm6tvQK+UYTxPFE8cH1F4plgdsA3CoL+cboX+epA4lZ9xsB72Simyw4EnY7/PrGXIyN24Qdqmr34/g0dgRNCWIR/twAAAABJRU5ErkJggg==" width="50" height="50">
+          <h3>
+            <%= @categories[1].name %>
+          </h3>
+        </div>
+      </a>
     </td>
     <td>
-      <div class="icon-wrapper">
-        <h3>
-          <%= link_to @categories[2].name, '/categories/3' %>
-        </h3>
-      </div>
+      <a href="/categories/3">
+        <div class="icon-wrapper">
+          <img class="icon icons8-Animation" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAD6UlEQVRoQ+2ZgZENQRCG/4uADLgIEAEiQASIgIsAESACRHBEwEXgRIAIEAH1vZp/a3bt7vTM7Dvq1U3Vq7p3r6e7/797enpmjnQg4+hAcOgSyP8WyUhErkt6KOmOpJuSriYQ55I+SXot6VsnMGw8Sfqxw0D/T0nvJX0o2VgDgvKXku4HnHwl6SQgNyeCjaeBuW8lvVgCtAQEdnCO8SuxAjNEAJYYMPcoRYvv/HY34FAu8jHp4X/vMjt8J/qQCZF8rqSJjyUBajTmgLxJDlo5bNn5OT8xCAgMkWYRdtEDURAGUZBCKi0NAD3PSAMIgIYxBWIQKIdtohAZgPmcBI9L+ZyY/prkbxVA5PbxCQIgbQQmB4IQQCIMzYFDMUWBPIa9teFokE7YrRl5BgxpZiCEzgzN5mDAEulBzp9leb80jejhEGuKtKwdJp15uwwwELPZwlDuxO+UVihfG8gxIuV/Sc/IZxQ5GqQULPXsCVEHo3JrZLCf4Svr5RggVBlqeW80MIqD3xM5+44I+h2VE4CQo7clPaioUnNOUutPE0sYYM0QbT4M2OODPWSJfk3FWrN5BhAvvF6lrkQ1C5duwBtvzTzLuuyfA2SLfEWxgXxJkXUX4I2OnMawO4Jrqa3pAeJ03lWNrYDUMgqotd08og9yfrD3bblGIoa3lvG63K2Rnl12a8dq9Q3dRL6PoKR3wdc60iM/6u+8szoqdLm0Db252+NgZC4gaIdYI7uOO28RvJ94o0EgB8TkG+m0ttbWRxwpyeDgPUlUwKkPtP5uNIe+btrrRPaCSHdbcrT0O93zs4LQ6Owz17SxE9O2UBGo9dPR2rGWnM9/dyc9nUP7wxkJwkc9YbT79MKK9FE1Dq/J4ihEhgpQFIgby5qjbC8gp3mojYkCcSG4iLQyATUHtfDBpvdE1xKdvQD5V/1Y2G40tcIKW6hfmRO2GwXCpsRmGLnq2QqLKyWbIn+vjiiQg1nsw9m480RXIjb/veouIRoR9/2kGBvURQxXytBdQhQIjnvhXcQ6yS8MQz6GhBL9W13iRaJZbasGSM7SPqPSZKcGCEy6/2Gt0K5sfS7hHMKBiXJbdVyoBYIhSjF7yl9vFJGcKcj4WYO9gxYlTFQtEPwg9ETEbxR0p2GDC0AgiGtbTn5Nd9AtQPAlf6MAFCWy9fIbYrhqRWfr20y4+50jEsOkF2nm9UNeR6NDFDjO+qmOdCIiTRcfrRExMJyhAPBS5cFRlM/04sCRBLgfOD2Hl4DSW+UmvVZpHU8fK0vyOQAuGlrTcrDTG5Gpw0TIbAPOaWc5ooTTjlo0DYvEbA2kaHBfApdA9sVsq96DicgfSzrroQP4Ka8AAAAASUVORK5CYII=" width="50" height="50">
+          <h3>
+            <%= @categories[2].name %>
+          </h3>
+        </div>
+      </a>
     </td>
   </tr>
   <tr>
     <td>
-      <div class="icon-wrapper">
-        <h3>
-          <%= link_to @categories[3].name, '/categories/4' %>
-        </h3>
-      </div>
+      <a href="/categories/4">
+        <div class="icon-wrapper">
+          <img class="icon icons8-Border-Color" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACzklEQVRoQ93aj5EMQRTH8d9F4GRABE4EiAARcBEgAyJABIjAiQARcBEgAkRAfbf6qa42M/339bBTdVW7d7sz/el+r/tNz53oSI6TI3FoT8g1Sc8l3ZP0WdIzSRetHbsX5EzSe0mnScPPJb1uwewBiRFvJD0Oo/IqAJowsyEp4mHU+7xuxsyEbCHM04yZBSlBdGFmQGoQzRhvSAuiCeMJ6UFUY7wgIxBVGA/ISEQxZjTEA1GEGQnxRGQxoyAzEEuY+1ZojoDMRKQYquab/LIXsgeCdlM1fw+qg6EHsheCdlNcUpe9C5VzM+RfQPyURDu+to5IelNEjBKrMw4bCRC34+vWhlaM4GRXJP2QdGcCZhVROyJLd3YfJN2YgNlE1EDWcoLZwxuTRZRC0pwgHwglQsqmQi9MEaIEko4E7wmlGZhiRA7CvtOnsPiw28G8HYeSJ6YKkYOwWXZXkiFsevXGVCNykF+h5ddt0YkWCi9MEyIHIXTIhyeSXiysdqMxzYgchD3ZtwGwtvs3CtOFyEH4u+UJr70w3YgcJC6VLbJGY4YgchA2l9n2p1RmZHL7srVh9ihM6X8VgC3V51bR+EUSa4ndTpbsy5ZirK1DEFsjQonM84tvAWMXHoGhgwAPQ2xBeNjyIDxFepoMdQ9mWE6k4bcUWnGSLy2GnKMFw7rE94aOhIGWIHGSs5asHbUYzuOCWAstS/KSR2AlGLdwins4HRHKdCpeei59UNkyMlMQSyNiSf4yPKTMTenMbkwK8bNARpJ1hzXILSe2kp0RsKlxLcn5Pp+j8eQS64wdl6HIjK/hlhNbEIv3j2GrJf3sUu+zzjCK/LC/xOTAdE3VTEUA9rDv5H3EOUJukCNxkq/1Po2k8c3/qTAaFkPsRupqAKWxn/b+6LZ0nS+GsBNyq+tsc7/8Zyc+nbUII0Llf8EwuZAKh6N2y3Run1dc7WggvwGFUi1CnjWeRgAAAABJRU5ErkJggg==" width="50" height="50">
+          <h3>
+            <%= @categories[3].name %>
+          </h3>
+        </div>
+      </a>
     </td>
     <td>
-      <div class="icon-wrapper">
-        <h3>
-          <%= link_to @categories[4].name, '/categories/5' %>
-        </h3>
-      </div>
+      <a href="/categories/5">
+        <div class="icon-wrapper">
+          <img class="icon icons8-Html-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAADxUlEQVRoQ+WZgZFMQRCG/4sAESACRIAIEAEiQASIABEgAkSACBABIkAE1He1vdU729PzZt7bu1erq6721e28mf7n7/67Z/ZER2InR4JDEZAHkl6vHOA9Se+9jxGQZ5KerhzIc0n4ubUIyGNJLyS9ksTzmuylpEeSnkjiOQVyS9JHSZ8l8bwm+yTppqTbknj+P4Bcl/RF0g9JV9dEh6Tvkq5s/MK/lBG+/LsZsTZ5rvpVc/RogEDbZUk3JH11DEIrQsDnIY31SWgfPhbyP6P1a4zU1MEU7ZAgbO5SmVI1HQUCS7B1CENo2P0yGoaAVAvPGQhBLT/TQl1jxNqUvVbgHIFkPoVNI+GSvfRb0gVJlyTxjJm+LxVqUUIPAcniMRICC4elgESRUG1PWLQWWr1A0kUWQjcExDQ7Uqc3ku5LeiiJZ+wsgNTU7NSBrAWpqUcUqxxy7kRd6UJsNNumpYAseRhDQCiGvqOYBcTaFK9OTHhX0jtJHzbP/n9LEVBWdVoilDFsT1qh1WpTDnHwGl4zC63hSWfQMrxmBiRSJ/MRISCWCbs5dtEV1SwP7Ganeo+QAZnSpswBwbvlZvQo5c7ao0CsqZwLpMxTgPyRBFPe0vakleyROi3huA9P70PWTVid2ruYs8kyRg55LWSdw7fN2QN/etuiyaGVTWxng4ghbl52bjiCQdHcWQQ0W6DWLUkr+SIgVfrdYHPa16Ip4lL1dy4Q326bI+weYoCTdl4xDCQxN4UwCivR+0OHuRYQO0SV40zX30riGYvCjRCznom8KG9f/B1urW4B/ldFzbYkt4D0VlpCBofZbT45SZYGU8wLQP/TQO9ak5OdgbMm34ABEIbjZUfrnZm1VosRo7tMYKOb0GMMIZY5mdUfgHJQI0SZt1Q9EwYfxnvztYBkSoLj19yMgCJU+IsSvUx4HOTPV3FfV2x8s6r7qlrbsdYk5II5xBWrNwARLpxbME6QNt6P44xhG7Dzm8dmUMuH02EtRiJ1qoG2JOcdz1Q0np0nJC3ps9CrhXdXso+2Kcis7T5MYDBjO1/WlwxIs6pPYWQUSOZY73eLAPHqFF0I9DrVO55w5WcM/EjToJUjLGzVnWcqNTvUUqZeh228tTAICNFgnUB0RunKEQYzIQnMZ6lMHtScOkL/Zc6XisYaJgzVDZrCiH/ZlIlFWdzbVLZqu25zUYNMuidvTi8Q7zgOmTJFbFkv5euI9WLRrpvzPYq2nWcOkJLmjK1y7NCuZ4m3JJCMLb6zfOJzaNfPA8ioag2/dyhGhh0affEfO/5CQh3gb10AAAAASUVORK5CYII=" width="50" height="50">
+          <h3>
+            <%= @categories[4].name %>
+          </h3>
+        </div>
+      </a>
     </td>
     <td>
-      <div class="icon-wrapper">
-        <h3>
-          <%= link_to @categories[5].name, '/categories/6' %>
-        </h3>
-      </div>
+      <a href="/categories/6">
+        <div class="icon-wrapper">
+          <img class="icon icons8-Google-Code" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAACNUlEQVRoQ+3Z8TXFMBQG8O9NwAaYABuwARswARtgAkzABmyACbABE2ACzvdO0tNXbXJvc9OXvtf8hZM295ekSeTOsCJltiIONCHXAI4AbBcO/ABwD+DKx1mH3AA4KxzQDI+QS/6xDvkCsAlgH8Bb4aA9AK8AODI7TcivC34s381CvPWgmxD/e2mD42NeX0gpU61rxszjk0ytCWL8cQ02Ily6uQ9Vm1QEwo33GcC3EDwIhIgnAFzfq00qECARD26/OhRiskPqiHcAB4LA+AxHY1eByQrpg/ADpcVkg6Qg+mCyQCwQWow5xBKhwZhCciCkGDNIToQEYwrRLpnCva6qFuosMwhb0y6ZGkhsxE0huTAxBNs1h1hjJIhsECuMFJEVkorRILJD+mK0iEEgTYzmGC89LQ8G8Zhzf2EmWHeL/MdKEHdylSzLb3JUPV4wQaabxh7TRvOI+spU8/Jl1O28++X90sbI0gqfPilVvw5lwuRiGV2b0GZroofvI+YEwFbCy4d4lCPB1Ns8W8VifUEtTRZJ64k7Za0g9ZOqtIdiHaTZo5jPjN4Pxxpk4Lxs5gFPU2Lv1UDY7iOA41AAsQZ9yvrH3bQzixoq2gBj7TPfzxHhtnALgKfr1hJ6EVevO/eUNGVtDWHzPhXNn0/davUP0wURPayZa4l1o53aBuFwMhnPjzw4nInBaR/305wnEM6QhWneBiGCI1Jy4XdDTFXaIKzETFLJ5cVlxoKQkgGdscWWv9Gg/gCy8AlCKCfZCgAAAABJRU5ErkJggg==" width="50" height="50">
+          <h3>
+            <%= @categories[5].name %>
+          </h3>
+        </div>
+      </a>
     </td>
   </tr>
 </table>

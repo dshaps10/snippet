@@ -10,9 +10,9 @@
 $roboto-slab: 'Roboto Slab', serif;
 
 html {
-  background-color: #00e6ac;
+  background-color: #4db8ff;
   color: white;
-  animation: fadein 1s;
+  animation: fadein 2s;
 }
 
 header {
@@ -27,13 +27,13 @@ table {
   tr {
     td {
       width: 25%;
-      padding: 5%;
+      padding: 2%;
       .icon-wrapper {
         padding: 10%;
         border-radius: 10px;
         transition: background-color 0.50s;
         &:hover {
-          background-color: #00b386;
+          background-color: #1aa3ff;
         }
       }
     }
@@ -56,7 +56,4 @@ a {
   color: white;
   text-decoration: none;
   font-family: $roboto-slab;
-  &:hover {
-    color: grey;
-  }
 }
