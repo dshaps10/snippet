@@ -20,7 +20,8 @@ $roboto-slab: 'Roboto Slab', serif;
 
 // Main Styling
 html {
-  background-color: #4db8ff;
+  background-image: url(http://multiclouddevops.com/assets/img/slide-001.png);
+  background-repeat: none;
   color: white;
   // animation: fadein 2s;
 }
@@ -44,9 +45,9 @@ table {
       padding: 2%;
       .icon-wrapper {
         padding: 10%;
-        background-color: #1aa3ff;
-        border: 2px solid #1aa3ff;
-        box-shadow: 2px 2px 2px #007acc;
+        background-color: #1e2537;
+        border: 2px solid #1e2537;
+        box-shadow: 0 14px 32px 0 rgba(0,0,0,0.4);
         border-radius: 5px;
         transition: background-color 0.4s, box-shadow 0.4s;
         &:hover {
