@@ -22,6 +22,9 @@ $roboto-slab: 'Roboto Slab', serif;
 .post-container {
   animation: fadein 2s;
   margin-top: 5%;
+  &.show {
+    animation: fadein 0.4s;
+  }
 }
 
 .posting {
