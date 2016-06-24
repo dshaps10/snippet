@@ -1,9 +1,9 @@
 // Import Google Fonts
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Noto+Sans);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Nunito-Light);
 
 // Font Variables
 // $ubuntu: 'Roboto Slab', serif;
-$ubuntu: 'Ubuntu';
+$default-font: 'Nunito';
 
 // Custom CSS Animations
 @keyframes fadein {
@@ -32,7 +32,7 @@ html {
   animation: move 3s;
   width: 100%;
   text-align: center;
-  font-family: $ubuntu;
+  font-family: $default-font;
 }
 
 table {
@@ -76,5 +76,5 @@ h3 {
 a {
   color: white;
   text-decoration: none;
-  font-family: $ubuntu;
+  font-family: $default-font;
 }
