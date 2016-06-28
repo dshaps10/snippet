@@ -2,6 +2,6 @@ Rails.application.routes.draw do
   resources :posts
   resources :categories
 
-  get '/', to: 'categories#index'
+  root 'categories#index'
 
 end
