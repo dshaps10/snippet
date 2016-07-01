@@ -10,7 +10,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @posts = Post.where(category_id: @category)
+    @posts = Post.where(category_id: @category).order("created_at DESC")
   end
 
   # GET /categories/new

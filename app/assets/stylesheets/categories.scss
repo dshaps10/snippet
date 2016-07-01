@@ -35,6 +35,12 @@ html {
   font-family: $default-font;
 }
 
+.search {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
 table {
   position: relative;
   animation: fadein 4s;

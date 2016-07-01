@@ -1,6 +1,6 @@
 <a href="/categories">
 	<div class="nav">
-		<h3>Back</h3>
+		<h3>Home</h3>
 	</div>
 </a>
 
@@ -9,13 +9,16 @@
   <h1><%= @category.name %></h1>
 </header>
 
+<% if @posts.present? %>
 	<div class="post-container">
 	  <% @posts.each do |post| %>
-		<a href="<%= "/posts/#{post.id}" %>">
-	  <div class="posting list">
-	    <h3><%= post.title %></h3>
-	    <p><%= post.description %></p>
-	  </div>
-	  <% end %>
-	</div>
-</a>
+			<a href="<%= "/posts/#{post.id}" %>">
+	  	<div class="posting list">
+	    	<h3><%= post.title %></h3>
+	    	<p><%= post.description %></p>
+	  	</div>
+  	<% end %>
+  </div>
+<% else %>
+	<p>Sorry, there are no posts like that!</p>
+<% end %>
