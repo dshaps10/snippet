@@ -6,9 +6,6 @@
 ##Next Release
 * Use markdown to store code snippets in original formatting
 
-##Future Releases
-* Implement search functionality to search for individual snippets 
-
 #About Snippet
 Snippet is an online marketplace where programmers can place post reusable snippets of code that can be plugged into other programmers' projects.
 
