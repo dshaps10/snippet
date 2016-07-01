@@ -9,6 +9,13 @@
   <h1><%= @category.name %></h1>
 </header>
 
+<div class="search">
+	<%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+	<%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+	<%= submit_tag "Search" %>
+	<% end %>
+</div>
+
 	<div class="post-container">
 	  <% @posts.each do |post| %>
 		<a href="<%= "/posts/#{post.id}" %>">
