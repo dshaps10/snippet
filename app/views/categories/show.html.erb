@@ -10,19 +10,22 @@
 </header>
 
 <div class="search">
-	<%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+	<%= form_tag(category_path, :method => "get", id: "search-form") do %>
 	<%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
 	<%= submit_tag "Search" %>
 	<% end %>
 </div>
 
+<% if @posts.present? %>
 	<div class="post-container">
 	  <% @posts.each do |post| %>
-		<a href="<%= "/posts/#{post.id}" %>">
-	  <div class="posting list">
-	    <h3><%= post.title %></h3>
-	    <p><%= post.description %></p>
-	  </div>
-	  <% end %>
-	</div>
-</a>
+			<a href="<%= "/posts/#{post.id}" %>">
+	  	<div class="posting list">
+	    	<h3><%= post.title %></h3>
+	    	<p><%= post.description %></p>
+	  	</div>
+  	<% end %>
+  </div>
+<% else %>
+	<p>Sorry, there are no posts like that!</p>
+<% end %>

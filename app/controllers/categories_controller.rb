@@ -11,6 +11,11 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
     @posts = Post.where(category_id: @category)
+    if params[:search]
+      @posts = Post.search(params[:search]).order("created_at DESC")
+    else
+      @posts = Post.all.order('created_at DESC')
+    end
   end
 
   # GET /categories/new
