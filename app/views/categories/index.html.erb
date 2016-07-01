@@ -5,6 +5,13 @@
   <h2>An online marketplace for code snippet sharing</h2>
 </header>
 
+<div class="search">
+  <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search All Snippets" %>
+  <%= submit_tag "Search" %>
+  <% end %>
+</div>
+
 <table>
   <tr>
     <td>
