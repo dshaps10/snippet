@@ -33,6 +33,12 @@ html {
   width: 100%;
   text-align: center;
   font-family: $default-font;
+  h1 {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-top: 0;
+  }
 }
 
 .search {
