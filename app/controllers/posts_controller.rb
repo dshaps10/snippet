@@ -19,8 +19,12 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
     @categories = Category.all
+    if request.xhr?
+      render '/posts/new', layout: false
+    else
+      @post = Post.new    
+    end
   end
 
   # GET /posts/1/edit

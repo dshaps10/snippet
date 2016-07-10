@@ -3,15 +3,19 @@ $(document).ready(function() {
 		event.preventDefault();
 		var $link = $(this);
 		var route = $link.attr('href');
+		debugger;
 
 		var ajaxRequest = $.ajax({
 			method: 'GET',
-			url: route
+			url: route,
+			dataType: 'html'
 		});
+		debugger;
 
 		ajaxRequest.done(function(data) {
 			$('.posts').prepend(data);
 		});
+		debugger;
 
 	});
 
