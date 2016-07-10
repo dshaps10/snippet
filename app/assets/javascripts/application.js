@@ -1,10 +1,19 @@
-'use strict';
-
-$(document).ready(() => {
-	$('.new').click((event) => {
+$(document).ready(function() {
+	$('.new').on('click', function(event) {
 		event.preventDefault();
-		
+		var $link = $(this);
+		var route = $link.attr('href');
 
+		var ajaxRequest = $.ajax({
+			method: 'GET',
+			url: route
+		});
+
+		ajaxRequest.done(function(data) {
+			$('.posts').prepend(data);
+		});
+
+	});
 
 });
 
