@@ -24,6 +24,7 @@ $(document).ready(function() {
 		var route = $form.attr('action');
 		var requestData = $form.serialize();
 		$form.hide();
+		debugger;
 
 		var ajaxRequest = $.ajax({
 			method: 'POST',
@@ -31,10 +32,12 @@ $(document).ready(function() {
 			data: requestData,
 			dataType: 'html'
 		});
+		debugger;
 
 		ajaxRequest.done(function(data) {
 			$('.posts').prepend(data);
 		});
+		debugger;
 
 	});
 
