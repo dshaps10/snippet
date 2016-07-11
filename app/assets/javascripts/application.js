@@ -1,21 +1,40 @@
 $(document).ready(function() {
+	
+	//Ajax request that makes new snippet form appear
 	$('.new').on('click', function(event) {
 		event.preventDefault();
 		var $link = $(this);
 		var route = $link.attr('href');
-		debugger;
 
 		var ajaxRequest = $.ajax({
 			method: 'GET',
 			url: route,
 			dataType: 'html'
 		});
-		debugger;
 
 		ajaxRequest.done(function(data) {
 			$('.category-title').prepend(data);
 		});
-		debugger;
+
+	});
+
+	// ajax request for sending new snippet data and appending to DOM
+	$('.category-title').on('submit', '.snippet-form', function(event) {
+		var $form = $(this);
+		var route = $form.attr('action');
+		var requestData = $form.serialize();
+		$form.hide();
+
+		var ajaxRequest = $.ajax({
+			method: 'POST',
+			url: route,
+			data: requestData,
+			dataType: 'html'
+		});
+
+		ajaxRequest.done(function(data) {
+			$('.posts').prepend(data);
+		});
 
 	});
 
