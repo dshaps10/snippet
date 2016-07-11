@@ -19,27 +19,27 @@ $(document).ready(function() {
 	});
 
 	// ajax request for sending new snippet data and appending to DOM
-	$('.category-title').on('submit', '.snippet-form', function(event) {
-		var $form = $(this);
-		var route = $form.attr('action');
-		var requestData = $form.serialize();
-		$form.hide();
-		debugger;
+// 	$('.category-title').on('submit', '.snippet-form', function(event) {
+// 		var $form = $(this);
+// 		var route = $form.attr('action');
+// 		var requestData = $form.serialize();
+// 		$form.hide();
+// 		debugger;
 
-		var ajaxRequest = $.ajax({
-			method: 'POST',
-			url: route,
-			data: requestData,
-			dataType: 'html'
-		});
-		debugger;
+// 		var ajaxRequest = $.ajax({
+// 			method: 'POST',
+// 			url: route,
+// 			data: requestData,
+// 			dataType: 'html'
+// 		});
+// 		debugger;
 
-		ajaxRequest.done(function(data) {
-			$('.posts').prepend(data);
-		});
-		debugger;
+// 		ajaxRequest.done(function(data) {
+// 			$('.posts').prepend(data);
+// 		});
+// 		debugger;
 
-	});
+// 	});
 
 });
 
