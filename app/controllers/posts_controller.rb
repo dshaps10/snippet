@@ -19,8 +19,13 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    @post = Post.new
     @categories = Category.all
+    @post = Post.new    
+    if request.xhr?
+      render '/posts/new', layout: false
+    else
+      redirect_to('/posts/new')
+    end
   end
 
   # GET /posts/1/edit
@@ -30,7 +35,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(post_params)
+    @post = Post.create(post_params)
 
     respond_to do |format|
       if @post.save
