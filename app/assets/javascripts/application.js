@@ -13,7 +13,7 @@ $(document).ready(function() {
 		debugger;
 
 		ajaxRequest.done(function(data) {
-			$('.posts').prepend(data);
+			$('.category-title').prepend(data);
 		});
 		debugger;
 

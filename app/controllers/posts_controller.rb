@@ -20,10 +20,11 @@ class PostsController < ApplicationController
   # GET /posts/new
   def new
     @categories = Category.all
+    @post = Post.new    
     if request.xhr?
       render '/posts/new', layout: false
     else
-      @post = Post.new    
+      redirect_to('/posts/new')
     end
   end
 
