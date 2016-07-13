@@ -5,6 +5,7 @@ $(document).ready(function() {
 		event.preventDefault();
 		var $link = $(this);
 		var route = $link.attr('href');
+		$link.hide();
 
 		var ajaxRequest = $.ajax({
 			method: 'GET',
